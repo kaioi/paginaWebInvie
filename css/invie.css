@@ -16,7 +16,7 @@
 
 
 body{ /*por ser padre de etiquetas lleva las fuentes*/
-	font-family: 'Allerta', sans-serif;
+	font-family: 'Catamaran', sans-serif;
 	margin:0;
 }
 
@@ -59,23 +59,31 @@ input:focus,textarea:focus{ /*pseudoClases*/
 .background{
 	background: url('../images/background.png');
 	background-size: cover;/*la imagen de la portada se amplia*/
+	height: 900px;
+
 }
 
 .button{
 	border-radius: 12px; /*se perosnaliza el boton*/
-	background: #fd324e;
+	/*background: #fd324e;*/
 	color: white; /*color del contenido*/
 	border:none;
 	padding: 7px; /*margen interior*/
 	font-size: 18px;
 	text-decoration: none;
 	cursor: pointer;/*al señalar el boton se pone una mano*/
-	background: linear-gradient(to left,#fe344e,#ff7250);/*degradaod del boton*/
+/*	background: linear-gradient(to left,#fe344e,#ff7250);*//*degradaod del boton*/
 	/*background: #ffb76b;*/
 /*background: -moz-linear-gradient(top, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%);
 background: -webkit-linear-gradient(top, #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
 background: linear-gradient(to bottom, #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 );*/
+background: #ef0e12;
+background: -moz-linear-gradient(top, #ef0e12 0%, #e86c57 50%, #ea2803 51%, #c90000 75%, #c72200 100%);
+background: -webkit-linear-gradient(top, #ef0e12 0%,#e86c57 50%,#ea2803 51%,#c90000 75%,#c72200 100%);
+background: linear-gradient(to bottom, #ef0e12 0%,#e86c57 50%,#ea2803 51%,#c90000 75%,#c72200 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef0e12', endColorstr='#c72200',GradientType=0 );
+
 }
 
 .titulo{
@@ -111,7 +119,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', end
 
 .guitarras h2{
 	font-family: 'Montserrat', sans-serif;
-	font-size: 35px;
+	font-size: 28px;
 
 }
 
@@ -131,7 +139,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', end
 	font-size: 24px;
 	display: inline-block; /*elementos uno al lado del otro*/
 	position: absolute;
-	right: 0;
+	right: -180px;
+
 }
 
 .menu a{
@@ -143,17 +152,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', end
 .menu li{
 	display: inline-block;
 	margin-left: 30px;
+	font-size: 15px;
 }
 
 .menu li:before{ /*agregando pseudo elemntos*/
-content: "°";
+/*content: "°";
 font-size: 50px;
 line-height: 20px;
-color: white;
+color: white;*/
 }
 .logotipo{
 	display: inline-block;
 	margin-left: 0;
+	margin-top: -98px;
+	margin-left: -30px;
 }
 
 .portada button{
@@ -167,6 +179,7 @@ color: white;
 
 
 
+
 .guitarra{
 	margin:10px;
 	padding:10px;
@@ -174,6 +187,7 @@ color: white;
 	border:1px solid #1F313C;
 	border-radius: 8px;/*redondea las puntas*/
 	margin:10px 10px 40px 10px;/*separacion entre los bordes entre las guitarras*/
+
 }
 
 .guitarra ol{
@@ -187,7 +201,7 @@ color: white;
 .right{ /*MOVILIDAD libre de los img*/
 	float:right;
 	position: relative;
-	top:-127px; /*se unica la imagen a nuestro gusto*/
+	top:-10px; /*se unica la imagen a nuestro gusto*/
 }
 
 .left{
